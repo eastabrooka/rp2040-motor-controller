@@ -1,37 +1,37 @@
 # rp2040-motor-controller
-A dual channel brushless motor controller based on the RP2040 microcontroller
 
-The boards cost between $15 and $40 each depending on version and quantity.
-```
-NOTE: This design is still changing. There is currently one board version in
-this repo. This is our dual CPU version with CAN bus and extra connectors for
-our robot. This version also improves the current measurement circuit compared
-to the first rev.
+## Note: This is a from the upstream Twisted-Fields/rp2040-motor-controller repo.
 
-Once we have verified the improved current measurement circuit, we will also
-support a single CPU version which is smaller and slightly cheaper. This will
-look similar to our first prototype version shown in the top of the photo at the
-bottom of this document. To view the files for that board see this commit:
-https://github.com/Twisted-Fields/rp2040-motor-controller/commit/ceeeb0ee0d24856a9ad8b6b036be5baf15e3ead6
-```
+### Intro / First Level Why ? 
 
-> **Warning**
-> These files are still under development and undergoing testing. While we do
-> aspire to produce a design that others can easily fabricate, we do not yet
-> recommend making them for yourself! Please post questions on board status
-> to our community forum at [community.twistedfields.com](https://community.twistedfields.com).
+Well, I find this very interesting / funny. 
 
-Our dream is that you will fab your own boards, make changes, and share your work - giving this design life beyond our efforts.
+The previous EMFcamps I have attended, I have always tried to "Make something that moved humans". 
 
-Designed by Taylor Alexander for Twisted Fields, for the Acorn Precision Farming Rover.
+One of them was a giant DC Wheelchair powered Creeper, 
 
-Many thanks to [Daniel Theobald](https://www.twistedfields.com/blog). Without your financial support and encouragement this project would not have been possible.
+One of them was Wheelchair Gokart. 
 
-Thanks to all of our supporters on Open Collective. Your contributions are helping grow this project in to a sustainable open source organization.
+The most recent was a Brushless Hoverboard Kart / Trike. 
 
-You can support this project yourself at our [Open Collective Page](https://opencollective.com/twisted-fields-research-collective).
+In all of these cases, the motor controllers have let me down. 
 
-To learn more about Acorn, please see our [announcement blog post](https://community.twistedfields.com/t/introducing-acorn-a-precision-farming-rover-from-twisted-fields/).
-Or see a more recent [technical update here](https://community.twistedfields.com/t/march-2022-update-simulation-brakes-funding-and-navigation-improvements/202).
 
-![A photo of both PCB designs](docs/dual.jpg)
+So this is my current working directory for making my own "Flavour" of Brushless Motor Controller.
+
+### Second Level Why ? 
+
+Well, Brushless motor controllers are Expensive. Theres things like the VESC, ODrive and the cheap red 300W Aliexpress controllers. 
+
+The Ali Express controlers I have had go bang. 
+
+The ODrive controllers are *Way* too expensive, and now, sadly, closed source. (Little bit salty about that)
+
+Honestly, the smart move would probably be : Just buy Aliexpress cloned odrive boards. 
+But then I dont learn anything. 
+
+Anyway, All the changes here are under the same CERN Permissive as upstream. 
+
+*Our dream is that you will fab your own boards, make changes, and share your work - giving this design life beyond our efforts.* - So I hope this plays nice with that. 
+
+More info to come when I start hacking about a bit more. 
