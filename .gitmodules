@@ -1,0 +1,3 @@
+[submodule "KicadFootprints"]
+	path = KicadFootprints
+	url = git@github.com:eastabrooka/KicadFootprints.git
